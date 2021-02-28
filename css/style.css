@@ -8,6 +8,7 @@
   --light-grey: rgb(175,177,184,1);
 
   --back-light-black: rgb(47,48,58,1);
+  --back-light-black-op80: rgba(47, 48, 58, 0.8);
   --back-light-grey: rgb(245,244,250,1);
   --back-blue: rgb(33,150,243,1);
   --back-light-grey-op10: rgb(255,255,255,0.1);
@@ -360,6 +361,31 @@ img {
   margin-left: 0;
 } */
 
+.about-us {
+  position: relative;
+}
+
+.about-us-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 27px;
+
+  color: var(--white-text);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: var(--back-light-black-op80);
+}
+
 /* Our team in index.html*/
 .our-team-bgr {
   background: var(--back-light-grey)
@@ -547,6 +573,8 @@ img {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+
+  transition: color 250ms var(--cubic);
 }
 
 .link-grey-footer {
@@ -620,7 +648,7 @@ img {
 }
 
 
-/* Modal */
+/* Modal window*/
 .backdrop {
   position: fixed;
   top: 0;
