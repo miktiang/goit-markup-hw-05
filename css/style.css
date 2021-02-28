@@ -828,8 +828,8 @@ img {
   padding: 63px 24px;
 
   background-color: rgba(33, 150, 243, 0.9);
-  opacity: 0;
-  transition: transform 250ms var(--cubic), opacity 250ms var(--cubic);
+
+  transition: transform 250ms var(--cubic);
 }
 
 .overlay-text {
@@ -842,7 +842,6 @@ img {
 .project-images-link:focus .overlay,
 .project-images-link:hover .overlay {
   transform: translateY(0);
-  opacity: 1;
 }
 
 .project-images-link {
